@@ -2,7 +2,6 @@
 
 **A full-stack League of Legends companion for reviewing player performance, tracking measurable goals, and bringing team statistics into one place.**
 
-Built by **Greyson Denison-Fischer**  
 **Built:** Late 2024–early 2025  
 **Status:** Completed personal project · No longer in active development
 
@@ -139,27 +138,6 @@ Key functionality includes:
 
 ---
 
-## What I Built
-
-I built GTracker as a personal full-stack project for my esports team.
-
-My work included:
-
-- Account and authentication flows
-- Riot Account, Summoner, and Match API integration
-- MongoDB data modeling and persistence
-- Match importing and deduplication
-- Player-stat calculations
-- Team creation and invitation flows
-- Team membership and authorization
-- Player and team interfaces
-- Statistics visualizations
-- Shared-match detection
-- Performance goal tracking
-- Team analytics
-
----
-
 ## Riot Data Flow
 
 GTracker resolves a Riot identity and imports recent match information through the following flow:
@@ -180,7 +158,7 @@ For team analytics, GTracker also deduplicates matches across player histories a
 **Authentication:** bcrypt · JWT · HTTP-only cookies  
 **External API:** Riot Games API  
 **Testing:** 18 focused unit tests  
-**UI:** Radix UI · Lucide icons
+**UI:** Radix UI · Lucide icons · ShadCN
 
 ---
 
@@ -227,21 +205,12 @@ GTracker is **complete and no longer in active development**.
 It was built in late 2024 and early 2025 for my semester's esports team as a way to centralize player and team information that otherwise required checking multiple separate profiles.
 
 If I rebuilt GTracker today, I would likely use TypeScript, normalize match and participant data into dedicated collections, add more robust Riot API retry/rate-limit handling, and expand integration testing.
-
+I would like to merge GTracker with my VOD review platform to create an all in one esports dashboard for teams. 
 ---
 
 ## Source Code
 
 The original working repository remains private.
-
-The public demo and documentation do not expose:
-
-- Riot API credentials
-- JWT secrets
-- MongoDB connection information
-- Real player or team data
-- Environment variables
-- Private deployment configuration
 
 ---
 
